@@ -215,7 +215,7 @@ body {
 /* responsive styles */
 @media only screen and (max-width: 900px) {
     body {
-        padding: 10px;
+
         width: 90vw;
     }
 
@@ -225,6 +225,10 @@ body {
         height: 100vh;
         border: none;
 
+    }
+
+    .player {
+        height: 60%;
     }
 
     .songList,
@@ -249,14 +253,14 @@ body {
     }
 
     .card {
-        height: 80%;
+        height: 75%;
         width: 100%;
         background-color: var(--color-bg);
         text-align: center;
 
 
         .card img {
-            width: 5rem;
+            width: 4.5rem;
         }
 
         .control {
