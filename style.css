@@ -181,6 +181,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 30px;
 }
 
 .control i {
@@ -212,19 +213,20 @@ body {
     transform: scale(1.6);
 }
 
-/* responsive styles */
+/* Responsive styles */
 @media only screen and (max-width: 900px) {
     body {
-
         width: 90vw;
+
+
     }
 
     .container {
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
         border: none;
-
+        padding-top: 40px;
     }
 
     .player {
@@ -234,7 +236,6 @@ body {
     .songList,
     .player {
         width: 95vw;
-
     }
 
     .songList ul li {
@@ -257,19 +258,19 @@ body {
         width: 100%;
         background-color: var(--color-bg);
         text-align: center;
-
-
-        .card img {
-            width: 4.5rem;
-        }
-
-        .control {
-            font-size: 2.5rem;
-            justify-content: center;
-        }
-
-        .control i {
-            margin: 10px;
-        }
     }
+
+    .card img {
+        width: 4.5rem;
+    }
+
+    .control {
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.control i {
+    margin: 10px;
 }
