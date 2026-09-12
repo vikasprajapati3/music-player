@@ -9,7 +9,6 @@ let playlistItems = document.querySelectorAll('#playlist li');
 let prevbttn = document.getElementById("previous");
 let nextbttn = document.getElementById("next");
 
-
 const songs = [
     { name: "6 Am", filePath: "songs/6_Am.mp3", coverPath: "songs/6_Am.jpg" },
     { name: "Beeba", filePath: "songs/Beeba.mp3", coverPath: "songs/Beeba.jpg" },
@@ -27,6 +26,24 @@ const songs = [
     { name: "Rounds N Ring", filePath: "songs/Rounds_N_Ring.mp3", coverPath: "songs/Rounds_N_Ring.jpg" },
     { name: "Shamaan De Vele", filePath: "songs/Shamaan_De_Vele.mp3", coverPath: "songs/Shamaan_De_Vele.jpg" },
 ];
+
+// Target the playlist element
+const playlistContainer = document.getElementById('playlist');
+
+// Loop 
+songs.forEach((song, index) => {
+    const li = document.createElement('li');
+
+    li.addEventListener('click', () => play(index));
+
+    li.innerHTML = `
+        <h5 class="songName">${song.name}</h5>
+        <h6>Yo Yo Honey Singh - Glory</h6>
+    `;
+
+    playlistContainer.appendChild(li);
+});
+
 
 // default song play 
 document.body.addEventListener("click", function autoPlayOnce() {
